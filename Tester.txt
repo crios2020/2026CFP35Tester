@@ -1,0 +1,18 @@
+Tester de Aplicaciones
+
+
+Ambientes de trabajo en la Ingenieria de Software
+
+-   Ambiente de Diseño y Prototipo                      1 dolar
+-   Ambiente de Desarollo o Programación                10 dolares
+-   Ambiente de Pruebas o Testing                       100 dolares
+-   Ambiente de Producción                              1000000 dolares
+
+Tipo de Testers
+QC          Quality Check       Tester de Calidad
+QA          Quality Asurance    Asegurador de Calidad (Automatización de pruebas)
+
+
+- Pruebas Unitarias:    es una prueba de un subsistema en particular.
+- Collección de pruebas unitarias:  es la lista de pruebas de de subsistema.
+- Suite de testing: es el conjunto de colleciones de pruebas de un artefacto.

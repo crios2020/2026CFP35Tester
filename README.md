@@ -14,10 +14,10 @@ Materiales: <br>
 
 
 Software: <br>
-    *Paquete de oficina: https://www.libreoffice.org/
-    *git:                https://git-scm.com/
-    *java (JDK):         https://www.oracle.com/latam/java/technologies/downloads/#jdk25-windows
-    *Paquete XAMPP:      https://www.apachefriends.org/
-    *Editor VSCode:      https://code.visualstudio.com/
-    *MySQL WorkBench:    https://dev.mysql.com/downloads/workbench/
-    *Postman:            https://www.postman.com/downloads/                    
+    * Paquete de oficina: https://www.libreoffice.org/
+    * git:                https://git-scm.com/
+    * java (JDK):         https://www.oracle.com/latam/java/technologies/downloads/#jdk25-windows
+    * Paquete XAMPP:      https://www.apachefriends.org/
+    * Editor VSCode:      https://code.visualstudio.com/
+    * MySQL WorkBench:    https://dev.mysql.com/downloads/workbench/
+    * Postman:            https://www.postman.com/downloads/                    
