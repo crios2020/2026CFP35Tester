@@ -15,7 +15,7 @@ public class Calculadora {
                 String operacion=args[0];
                 double nro1 = Double.parseDouble(args[1]);
                 double nro2 = Double.parseDouble(args[2]);
-                DecimalFormat df=new DecimalFormat("0.000000");
+                DecimalFormat df=new DecimalFormat("#,###,###,###.000000");
                 System.out.println(ANSI_GREEN);
                 if(operacion.equalsIgnoreCase("sumar")) System.out.println(df.format(nro1+nro2));
                 if(operacion.equalsIgnoreCase("restar")) System.out.println(df.format(nro1-nro2));
@@ -40,7 +40,7 @@ public class Calculadora {
             } catch (Exception e) {
                 System.out.println(ANSI_RED);
                 System.out.println("Ocurrió un error con el ingreso de parámetros de entrada!");
-                System.out.println("Se esperan tres parámetros de entrada operacion numero1 numero 2");
+                System.out.println("Se esperan tres parámetros de entrada operacion numero1 numero2");
                 System.out.println("Solo se permiten las operaciones sumar - restar - dividir - multiplicar");
                 System.out.println("Ejemplo: java Calculadora sumar 5 6");
             }
@@ -48,7 +48,7 @@ public class Calculadora {
         } else {
             System.out.println(ANSI_GREEN);
 			System.out.println("-- Programa de Calculadora --");
-            System.out.println("Se esperan tres parámetros de entrada operacion numero1 numero 2");
+            System.out.println("Se esperan tres parámetros de entrada operacion numero1 numero2");
             System.out.println("Solo se permiten las operaciones sumar - restar - dividir - multiplicar");
             System.out.println("Ejemplo: java Calculadora sumar 5 6");
         }
