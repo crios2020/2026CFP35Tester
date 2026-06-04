@@ -1,0 +1,145 @@
+{
+  "info": {
+    "_postman_id": "550b8da8-cf42-42b2-9ac2-1ee2d89f299b",
+    "name": "Test_SumarService",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24659410"
+  },
+  "item": [
+    {
+      "name": "0 - Testear Funcionamiento de Apache Web Server",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "1 - Testear Funcionamiento de SumarService",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2 - Testear Programa sin parámetros de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3 - Testear funcionamiento con 1 parámetro de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4 - Testear Funcionamiento con 2 parámetros de entrada correctos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5.1 - Testear programa con 3 o más parámetros de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=8&nro3=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            },
+            {
+              "key": "nro3",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
