@@ -1,0 +1,725 @@
+{
+  "info": {
+    "_postman_id": "8c930608-f988-41bc-9e60-b24dbd4490ed",
+    "name": "Test_SumarService",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24659410"
+  },
+  "item": [
+    {
+      "name": "0 - Testear Funcionamiento de Apache Web Server",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "1 - Testear Funcionamiento de SumarService",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2 - Testear Programa sin parámetros de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3 - Testear funcionamiento con 1 parámetro de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4 - Testear Funcionamiento con 2 parámetros de entrada correctos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5.1 - Testear programa con 3 o más parámetros de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=8&nro3=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            },
+            {
+              "key": "nro3",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5.2 - Testear programa con 3 o más parámetros de entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=8&nro3=5&nombre=Juan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            },
+            {
+              "key": "nro3",
+              "value": "5"
+            },
+            {
+              "key": "nombre",
+              "value": "Juan"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6.1 - Testear con parámetros de entrada no numéricos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=hola&nro2=chau",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "hola"
+            },
+            {
+              "key": "nro2",
+              "value": "chau"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6.2 - Testear con parámetros de entrada no numéricos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=hola&nro2=8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "hola"
+            },
+            {
+              "key": "nro2",
+              "value": "8"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6.3 - Testear con parámetros de entrada no numéricos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4&nro2=chau",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4"
+            },
+            {
+              "key": "nro2",
+              "value": "chau"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7.1- Testear Programa con parámetros de entrada no entero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=10&nro2=10.0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "10"
+            },
+            {
+              "key": "nro2",
+              "value": "10.0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7.2- Testear Programa con parámetros de entrada no entero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=3.5&nro2=5.5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "3.5"
+            },
+            {
+              "key": "nro2",
+              "value": "5.5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7.3- Testear Programa con parámetros de entrada no entero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4.1&nro2=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4.1"
+            },
+            {
+              "key": "nro2",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7.4- Testear Programa con parámetros de entrada no entero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=4.1&nro2=5.6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "4.1"
+            },
+            {
+              "key": "nro2",
+              "value": "5.6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8.1- Testear Programa con parámetros de entrada neutros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=10&nro2=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "10"
+            },
+            {
+              "key": "nro2",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8.2- Testear Programa con parámetros de entrada neutros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=0&nro2=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "0"
+            },
+            {
+              "key": "nro2",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8.3 - Testear Programa con parámetros de entrada neutros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=0&nro2=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "0"
+            },
+            {
+              "key": "nro2",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8.4 - Testear Programa con parámetros de entrada neutros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=10&nro2=0&nro3=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "10"
+            },
+            {
+              "key": "nro2",
+              "value": "0"
+            },
+            {
+              "key": "nro3",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.1 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-10&nro2=-10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-10"
+            },
+            {
+              "key": "nro2",
+              "value": "-10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.2 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-5&nro2=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-5"
+            },
+            {
+              "key": "nro2",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.3 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=10&nro2=-50",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "10"
+            },
+            {
+              "key": "nro2",
+              "value": "-50"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.4 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-5&nro2=-5&nro3=-5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-5"
+            },
+            {
+              "key": "nro2",
+              "value": "-5"
+            },
+            {
+              "key": "nro3",
+              "value": "-5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.5 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-10&nro2=0&nro3=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-10"
+            },
+            {
+              "key": "nro2",
+              "value": "0"
+            },
+            {
+              "key": "nro3",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "9.6 - Testear Programa con parámetros de entrada negativos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-10&nro2=-0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-10"
+            },
+            {
+              "key": "nro2",
+              "value": "-0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "10.1- Testear Programa con desbordamiento en números enteros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=2000000000&nro2= 2000000000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "2000000000"
+            },
+            {
+              "key": "nro2",
+              "value": " 2000000000"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "10.2 - Testear Programa con desbordamiento en números enteros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/sumarService?nro1=-2000000000&nro2=-2000000000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "sumarService"
+          ],
+          "query": [
+            {
+              "key": "nro1",
+              "value": "-2000000000"
+            },
+            {
+              "key": "nro2",
+              "value": "-2000000000"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
